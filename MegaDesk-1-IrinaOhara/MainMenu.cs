@@ -45,5 +45,10 @@ namespace MegaDesk_1_IrinaOhara
         {
             Application.Exit();
         }
+
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

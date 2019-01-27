@@ -33,9 +33,9 @@
             // 
             // btnBackToMainMenu
             // 
-            this.btnBackToMainMenu.Location = new System.Drawing.Point(465, 126);
+            this.btnBackToMainMenu.Location = new System.Drawing.Point(26, 26);
             this.btnBackToMainMenu.Name = "btnBackToMainMenu";
-            this.btnBackToMainMenu.Size = new System.Drawing.Size(142, 70);
+            this.btnBackToMainMenu.Size = new System.Drawing.Size(150, 70);
             this.btnBackToMainMenu.TabIndex = 0;
             this.btnBackToMainMenu.Text = "Back To Main Menu";
             this.btnBackToMainMenu.UseVisualStyleBackColor = true;
@@ -45,7 +45,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(648, 634);
             this.Controls.Add(this.btnBackToMainMenu);
             this.Name = "SearchQuotes";
             this.Text = "SearchQuotes";
