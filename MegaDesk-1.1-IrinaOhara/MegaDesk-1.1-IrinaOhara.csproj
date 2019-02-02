@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2C67FB91-8AA1-47D6-950B-255ACF4AD1F8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MegaDesk_1_IrinaOhara</RootNamespace>
-    <AssemblyName>MegaDesk-1-IrinaOhara</AssemblyName>
+    <RootNamespace>MegaDesk_1_1_IrinaOhara</RootNamespace>
+    <AssemblyName>MegaDesk-1.1-IrinaOhara</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -97,6 +97,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SearchQuotes.resx">
       <DependentUpon>SearchQuotes.cs</DependentUpon>
