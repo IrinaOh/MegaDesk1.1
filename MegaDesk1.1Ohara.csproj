@@ -1,0 +1,213 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{3D905CFD-7748-4484-88F5-AA7A6E4062C0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>MegaDesk1._1Ohara</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\master" />
+    <None Include=".git\objects\04\fdb54f3dd5dff659fa3baebdadf9d566372fac" />
+    <None Include=".git\objects\0c\da8c589c2400d0fd1329822cdce066b3c3b65b" />
+    <None Include=".git\objects\15\3fe9379d879a4fdbf66b16ecd0836df11e41f3" />
+    <None Include=".git\objects\15\74216002a20f4d3a592b5ee8f9eb4666f03226" />
+    <None Include=".git\objects\1a\f7de150c99c12dd67a509fe57c10d63e4eeb04" />
+    <None Include=".git\objects\1c\316c6a6d4506d82d1868ab96024a131be5ca89" />
+    <None Include=".git\objects\1f\f0c423042b46cb1d617b81efb715defbe8054d" />
+    <None Include=".git\objects\23\d4c2e7c1e2b75d68b976ca6b6f57216bc3cc8e" />
+    <None Include=".git\objects\2a\d8c3284d3a236e9833cefc8e841fe5e7b11ad0" />
+    <None Include=".git\objects\39\645652af62950ebf3b28ec3a5400dcec30b1c4" />
+    <None Include=".git\objects\3c\4efe206bd0e7230ad0ae8396a3c883c8207906" />
+    <None Include=".git\objects\3e\e7035cbd86a827707c571cd81bfaf10f1e5204" />
+    <None Include=".git\objects\4e\a5c6f1b4b1b238d246f09c263b10feb058e5db" />
+    <None Include=".git\objects\69\3a7c5aac788b00f2d2e69ce73c64e315084f90" />
+    <None Include=".git\objects\6b\36eb3631d70ba53f5778d420a2609addfa7b6f" />
+    <None Include=".git\objects\73\1f6de6c291e303814b02808f34140fe560e8e4" />
+    <None Include=".git\objects\8f\1a55711f42261ba33234e24d807e723e392fe9" />
+    <None Include=".git\objects\91\e3470e1645e6e8d0de6fe9f6b242f366e9a393" />
+    <None Include=".git\objects\9f\8f697a039bce958f3ceb2ddd8ae8bcfc816e1a" />
+    <None Include=".git\objects\a3\7d7a7a9ba22a0ac4955e039783c74e803530c1" />
+    <None Include=".git\objects\a4\1070fa26dc355a8f5d4e9de489ae551b701534" />
+    <None Include=".git\objects\a4\116e49399dc5689909677f3fd45e5c557f9931" />
+    <None Include=".git\objects\a6\a6d60309f5bb46d3b4eee883ca683ef745dcdd" />
+    <None Include=".git\objects\a6\f69f369e99dbc07f4faafb16a1b938e406f08a" />
+    <None Include=".git\objects\ad\64ef2adf7d3d102bd33fbde99023219eea62c9" />
+    <None Include=".git\objects\ad\7b8cbe08cddcd6de1bec66a4e20f59d1aa8860" />
+    <None Include=".git\objects\ad\7f4f79290b388541b081cb84c55e22cba89f59" />
+    <None Include=".git\objects\af\7dbebbacef595e3089c01c05671016c21a8304" />
+    <None Include=".git\objects\b3\2a0b7aab8eac74c1a1b08f28557ab2af24e2e6" />
+    <None Include=".git\objects\b5\45a519373c32365836e9afdefd4e38489b63f7" />
+    <None Include=".git\objects\ba\cf501a7e656a25338c8d25e0b8ec8929554cbf" />
+    <None Include=".git\objects\bc\beb71f192ac383290c8da797ad40327b62cee3" />
+    <None Include=".git\objects\be\01e825de2f90897dc5edf0a4e669fc8a8e4598" />
+    <None Include=".git\objects\c0\f9eafb8274d45cef69d4ba2190d763095509ba" />
+    <None Include=".git\objects\c3\7b6a0f46a737c4dea33397daa571a4a366f081" />
+    <None Include=".git\objects\d7\268796975bd382ae57d65b82faf0ac02c265f1" />
+    <None Include=".git\objects\dc\b017bf5e4bbd8e032f970982142d2be6df65ec" />
+    <None Include=".git\objects\e0\8071b647204671cdf510ae71478de53dbfd8b6" />
+    <None Include=".git\objects\f2\ad5312e2dce4649174e30c59f80f27c6176f22" />
+    <None Include=".git\objects\f4\86d27125d5881fbdbd175af787c98b90addaa5" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\master" />
+    <None Include=".vs\MegaDesk-1-IrinaOhara\v15\.suo" />
+    <None Include=".vs\MegaDesk-1-IrinaOhara\v15\Server\sqlite3\db.lock" />
+    <None Include=".vs\MegaDesk-1-IrinaOhara\v15\Server\sqlite3\storage.ide" />
+    <None Include=".vs\MegaDesk-1-IrinaOhara\v15\Server\sqlite3\storage.ide-shm" />
+    <None Include=".vs\MegaDesk-1-IrinaOhara\v15\Server\sqlite3\storage.ide-wal" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="MegaDesk-1-IrinaOhara\App.config" />
+    <None Include="MegaDesk-1-IrinaOhara\bin\Debug\MegaDesk-1-IrinaOhara.exe.config" />
+    <None Include="MegaDesk-1-IrinaOhara\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="MegaDesk-1-IrinaOhara\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="MegaDesk-1-IrinaOhara\obj\Debug\MegaDesk-1-IrinaOhara.csproj.CoreCompileInputs.cache" />
+    <None Include="MegaDesk-1-IrinaOhara\obj\Debug\MegaDesk-1-IrinaOhara.csproj.GenerateResource.cache" />
+    <None Include="MegaDesk-1-IrinaOhara\obj\Debug\MegaDesk-1-IrinaOhara.csprojAssemblyReference.cache" />
+    <None Include="MegaDesk-1-IrinaOhara\obj\Release\MegaDesk-1-IrinaOhara.csproj.CoreCompileInputs.cache" />
+    <None Include="MegaDesk-1-IrinaOhara\Properties\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".git\ms-persist.xml" />
+    <Content Include="MegaDesk-1-IrinaOhara\bin\Debug\MegaDesk-1-IrinaOhara.exe" />
+    <Content Include="MegaDesk-1-IrinaOhara\bin\Debug\MegaDesk-1-IrinaOhara.pdb" />
+    <Content Include="MegaDesk-1-IrinaOhara\MegaDesk-1-IrinaOhara.csproj" />
+    <Content Include="MegaDesk-1-IrinaOhara\obj\Debug\MegaDesk-1-IrinaOhara.csproj.FileListAbsolute.txt" />
+    <Content Include="MegaDesk-1-IrinaOhara\obj\Debug\MegaDesk-1-IrinaOhara.exe" />
+    <Content Include="MegaDesk-1-IrinaOhara\obj\Debug\MegaDesk-1-IrinaOhara.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MegaDesk-1-IrinaOhara\AddQuote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MegaDesk-1-IrinaOhara\AddQuote.Designer.cs">
+      <DependentUpon>AddQuote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MegaDesk-1-IrinaOhara\Desk.cs" />
+    <Compile Include="MegaDesk-1-IrinaOhara\DeskQuote.cs" />
+    <Compile Include="MegaDesk-1-IrinaOhara\DisplayQuote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MegaDesk-1-IrinaOhara\DisplayQuote.Designer.cs">
+      <DependentUpon>DisplayQuote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MegaDesk-1-IrinaOhara\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MegaDesk-1-IrinaOhara\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MegaDesk-1-IrinaOhara\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="MegaDesk-1-IrinaOhara\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="MegaDesk-1-IrinaOhara\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="MegaDesk-1-IrinaOhara\Program.cs" />
+    <Compile Include="MegaDesk-1-IrinaOhara\Properties\AssemblyInfo.cs" />
+    <Compile Include="MegaDesk-1-IrinaOhara\Properties\Resources.Designer.cs" />
+    <Compile Include="MegaDesk-1-IrinaOhara\Properties\Settings.Designer.cs" />
+    <Compile Include="MegaDesk-1-IrinaOhara\SearchQuotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MegaDesk-1-IrinaOhara\SearchQuotes.Designer.cs">
+      <DependentUpon>SearchQuotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MegaDesk-1-IrinaOhara\ViewAllQuotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MegaDesk-1-IrinaOhara\ViewAllQuotes.Designer.cs">
+      <DependentUpon>ViewAllQuotes.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MegaDesk-1-IrinaOhara\AddQuote.resx">
+      <DependentUpon>AddQuote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MegaDesk-1-IrinaOhara\DisplayQuote.resx">
+      <DependentUpon>DisplayQuote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MegaDesk-1-IrinaOhara\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MegaDesk-1-IrinaOhara\obj\Debug\MegaDesk_1_IrinaOhara.AddQuote.resources" />
+    <EmbeddedResource Include="MegaDesk-1-IrinaOhara\obj\Debug\MegaDesk_1_IrinaOhara.DisplayQuote.resources" />
+    <EmbeddedResource Include="MegaDesk-1-IrinaOhara\obj\Debug\MegaDesk_1_IrinaOhara.MainMenu.resources" />
+    <EmbeddedResource Include="MegaDesk-1-IrinaOhara\obj\Debug\MegaDesk_1_IrinaOhara.Properties.Resources.resources" />
+    <EmbeddedResource Include="MegaDesk-1-IrinaOhara\obj\Debug\MegaDesk_1_IrinaOhara.SearchQuotes.resources" />
+    <EmbeddedResource Include="MegaDesk-1-IrinaOhara\obj\Debug\MegaDesk_1_IrinaOhara.ViewAllQuotes.resources" />
+    <EmbeddedResource Include="MegaDesk-1-IrinaOhara\Properties\Resources.resx" />
+    <EmbeddedResource Include="MegaDesk-1-IrinaOhara\SearchQuotes.resx">
+      <DependentUpon>SearchQuotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MegaDesk-1-IrinaOhara\ViewAllQuotes.resx">
+      <DependentUpon>ViewAllQuotes.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\MegaDesk1.1Ohara\v15\" />
+    <Folder Include="MegaDesk-1-IrinaOhara\bin\Release\" />
+    <Folder Include="MegaDesk-1-IrinaOhara\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MegaDesk1.1Ohara", "MegaDesk1.1Ohara.csproj", "{3D905CFD-7748-4484-88F5-AA7A6E4062C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D905CFD-7748-4484-88F5-AA7A6E4062C0}.Debug|x86.ActiveCfg = Debug|x86
+		{3D905CFD-7748-4484-88F5-AA7A6E4062C0}.Debug|x86.Build.0 = Debug|x86
+		{3D905CFD-7748-4484-88F5-AA7A6E4062C0}.Release|x86.ActiveCfg = Release|x86
+		{3D905CFD-7748-4484-88F5-AA7A6E4062C0}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FE29C22-79D1-401B-B4E8-EC52714389FF}
+	EndGlobalSection
+EndGlobal
