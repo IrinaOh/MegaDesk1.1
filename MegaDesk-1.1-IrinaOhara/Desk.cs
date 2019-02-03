@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace MegaDesk_1_IrinaOhara
 {
-    class Desk
+    public class Desk
     {
         public int Width { get; set; }
         public int Depth { get; set; }
         public int NumberOfDrawers { get; set; }
-        public string DesktopMaterial { get; set; }
+        public DesktopMaterial DesktopMaterial { get; set; }
         public int RushDays { get; internal set; }
 
 
@@ -21,4 +21,13 @@ namespace MegaDesk_1_IrinaOhara
         public const int MINDEPTH = 12;
         public const int MAXDEPTH = 48;
     }
+
+    public enum DesktopMaterial
+    {
+        Oak = 200,
+        Laminate = 100,
+        Pine = 50,
+        Rosewood = 300,
+        Veneer = 125
+    };
 }

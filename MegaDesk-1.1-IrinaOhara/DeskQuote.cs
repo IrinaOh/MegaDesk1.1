@@ -12,7 +12,7 @@ namespace MegaDesk_1_IrinaOhara
         private string CustomerName;
         private DateTime QuoteDate;
         private Desk newDesk = new Desk();
-        //private int RushDays;
+        private int RushDays;
         private int QuoteAmount;
         #endregion
 
@@ -21,14 +21,17 @@ namespace MegaDesk_1_IrinaOhara
         private int DeskSurfaceCost = 0;
         private int ExtraSurfaceCharge = 0;
         private int RushProductionCost = 0;
+        private string name;
         #endregion
 
         private const int PRICE_BASE = 200;
         private const int SIZE_THRESHOLD = 1000;
         private const int PRICE_PER_DRAWER = 50;
 
-        public DeskQuote(int width, int depth, int drawers, string material, int rushDays)
+        public DeskQuote(string name, DateTime date, int width, int depth, int drawers, DesktopMaterial material, int rushDays)
         {
+            CustomerName = name;
+            QuoteDate = date;
             newDesk.Width = width;
             newDesk.Depth = depth;
             newDesk.NumberOfDrawers = drawers;
@@ -40,7 +43,7 @@ namespace MegaDesk_1_IrinaOhara
 
         public int CalculateQuoteTotal()
         {
-            return PRICE_BASE + DrawerCost() + SurfaceCost() + RushCost();
+            return QuoteAmount = PRICE_BASE + DrawerCost() + SurfaceCost() + RushCost();
         }
 
         private int DrawerCost()
@@ -55,24 +58,6 @@ namespace MegaDesk_1_IrinaOhara
                 ExtraSurfaceCharge = SurfaceArea - 1000;
             }
 
-            switch (newDesk.DesktopMaterial)
-            {
-                case "Oak":
-                    DeskSurfaceCost = 200;
-                    break;
-                case "Laminate":
-                    DeskSurfaceCost = 100;
-                    break;
-                case "Pine":
-                    DeskSurfaceCost = 50;
-                    break;
-                case "Rosewood":
-                    DeskSurfaceCost = 300;
-                    break;
-                case "Veneer":
-                    DeskSurfaceCost = 125;
-                    break;
-            }
             return DeskSurfaceCost + ExtraSurfaceCharge;
         }
 

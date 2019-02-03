@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,11 +15,17 @@ namespace MegaDesk_1_IrinaOhara
     public partial class AddQuote : Form
     {
         public object errorProvider { get; private set; }
+        public object QuoteAmount { get; private set; }
+
+        DesktopMaterial material;
 
         public AddQuote()
         {
             InitializeComponent();
-        }
+            //use List<T> to populate a combobox
+            List<DesktopMaterial> MaterialList = Enum.GetValues(typeof(DesktopMaterial)).Cast<DesktopMaterial>().ToList();
+            surfaceMaterial.DataSource = MaterialList;
+        }        
 
          public int validation()
          {
@@ -47,21 +54,42 @@ namespace MegaDesk_1_IrinaOhara
                 flag = 1;
             }*/
             return flag;
-         } 
+         }
 
         private void btnGetQuote_Click(object sender, EventArgs e)
         {
-            if(validation() == 0)
+            string deskquotefile = @"quotes.txt";
+            //DeskQuote.CalculateQuoteTotal() = QuoteAmount;
+            //int numberOfDrawers = numberOfDrawers.SelectedValue;
+            material = (DesktopMaterial)surfaceMaterial.SelectedValue;
+            string deskquoterecord = string.Format("{0},{1},{2},{3},{4},{5}", (string)name.Text, DateTime.Now.ToLongDateString(), width.Text, depth.Text, numberOfDrawers.SelectedValue, material, rushOrder.SelectedValue, QuoteAmount);
+
+            if (validation() == 0)
             {
                 errorProvider1.Clear();
                 DisplayQuote displayQuoteForm = new DisplayQuote();
                 displayQuoteForm.Tag = this;
                 displayQuoteForm.Show(this);
                 Hide();
-            } 
+            }
+
+            // Write quote to a file.
+            if (!File.Exists(deskquotefile))
+            {
+                using (StreamWriter sw = File.CreateText(deskquotefile))
+                {
+                    sw.WriteLine(deskquoterecord);
+                    sw.Close();
+                }
+            }
+            else
+            {
+                using (StreamWriter sw = File.AppendText(deskquotefile))
+                {
+                    sw.WriteLine(deskquoterecord);
+                }
+            }
         }
-
-
 
         private void btnBackToMainMenu_Click(object sender, EventArgs e)
         {
