@@ -29,8 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSaveQuote = new System.Windows.Forms.Button();
-            this.btnCancelQuote = new System.Windows.Forms.Button();
+            this.backBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -42,33 +41,22 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Total";
             // 
-            // btnSaveQuote
+            // backBtn
             // 
-            this.btnSaveQuote.Location = new System.Drawing.Point(134, 613);
-            this.btnSaveQuote.Name = "btnSaveQuote";
-            this.btnSaveQuote.Size = new System.Drawing.Size(145, 68);
-            this.btnSaveQuote.TabIndex = 1;
-            this.btnSaveQuote.Text = "Save Quote";
-            this.btnSaveQuote.UseVisualStyleBackColor = true;
-            this.btnSaveQuote.Click += new System.EventHandler(this.btnSaveQuote_Click);
-            // 
-            // btnCancelQuote
-            // 
-            this.btnCancelQuote.Location = new System.Drawing.Point(394, 613);
-            this.btnCancelQuote.Name = "btnCancelQuote";
-            this.btnCancelQuote.Size = new System.Drawing.Size(161, 68);
-            this.btnCancelQuote.TabIndex = 2;
-            this.btnCancelQuote.Text = "Cancel Quote";
-            this.btnCancelQuote.UseVisualStyleBackColor = true;
-            this.btnCancelQuote.Click += new System.EventHandler(this.btnCancelQuote_Click);
+            this.backBtn.Location = new System.Drawing.Point(273, 608);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(145, 68);
+            this.backBtn.TabIndex = 1;
+            this.backBtn.Text = "Back";
+            this.backBtn.UseVisualStyleBackColor = true;
+            this.backBtn.Click += new System.EventHandler(this.btnSaveQuote_Click);
             // 
             // DisplayQuote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(746, 721);
-            this.Controls.Add(this.btnCancelQuote);
-            this.Controls.Add(this.btnSaveQuote);
+            this.ClientSize = new System.Drawing.Size(694, 721);
+            this.Controls.Add(this.backBtn);
             this.Controls.Add(this.label1);
             this.Name = "DisplayQuote";
             this.Text = "DisplayQuote";
@@ -80,7 +68,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnSaveQuote;
-        private System.Windows.Forms.Button btnCancelQuote;
+        private System.Windows.Forms.Button backBtn;
     }
 }

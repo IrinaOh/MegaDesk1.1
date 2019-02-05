@@ -46,13 +46,6 @@ namespace MegaDesk_1_IrinaOhara
                  errorProvider1.SetError(width, MessageBox.Show("Please enter an integer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error).ToString());
                  flag = 1;
              }
-             //must be within a certain range
-             /*else if(Desk.MINWIDTH > int.Parse(width.Text) && int.Parse(width.Text) > Desk.MAXWIDTH)
-             {
-                width.Focus();
-                errorProvider1.SetError(width, MessageBox.Show("Width cannot be less than 24in and greater than 96in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error).ToString());
-                flag = 1;
-            }*/
             return flag;
          }
 

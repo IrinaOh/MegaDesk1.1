@@ -12,23 +12,18 @@ namespace MegaDesk_1_IrinaOhara
 {
     public partial class DisplayQuote : Form
     {
-        private DeskQuote quote;
-
         public DisplayQuote()
+            // DateTime date, int width, int depth, int drawers, DesktopMaterial material, int rushDays
         {
-            InitializeComponent();
-        }
 
-        private void btnCancelQuote_Click(object sender, EventArgs e)
-        {
-            var addQuote = (AddQuote)Tag;
-            addQuote.Show();
-            Close();
+ 
         }
 
         private void btnSaveQuote_Click(object sender, EventArgs e)
         {
-
+            var addQuote = (AddQuote)Tag;
+            addQuote.Show();
+            Close();
         }
     }
 }
