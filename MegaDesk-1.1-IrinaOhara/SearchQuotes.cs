@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MegaDesk_1_IrinaOhara
 {
-    public partial class SearchQuotes : Form
+    public partial class searchQuotes : Form
     {
-        public SearchQuotes()
+
+        public searchQuotes()
         {
             InitializeComponent();
+            //use List<T> to populate a combobox
+            List<DesktopMaterial> MaterialList = Enum.GetValues(typeof(DesktopMaterial)).Cast<DesktopMaterial>().ToList();
+            searchInput.DataSource = MaterialList;
         }
 
         private void btnBackToMainMenu_Click(object sender, EventArgs e)
@@ -22,6 +22,44 @@ namespace MegaDesk_1_IrinaOhara
             var mainMenu = (MainMenu)Tag;
             mainMenu.Show();
             Close();
+        }
+
+        private void searchbtn_Click(object sender, EventArgs e)
+        {
+            searchResultView.Items.Clear();
+            string Material = searchInput.SelectedItem.ToString();
+
+            try
+            {
+                // Read quotes from the quotes text file and fill the ListView control with quotes that match
+                // our search criteria.
+                string quoteFile = @"quotes.txt";
+                if (!File.Exists(quoteFile))
+                {
+                    MessageBox.Show("No quote file exists", "Error searching quotes");
+                }
+                else
+                {
+                    using (StreamReader sr = new StreamReader(quoteFile))
+                    {
+                        string quoteRow;
+                        while (!sr.EndOfStream)
+                        {
+                            quoteRow = sr.ReadLine();
+                            if (quoteRow.Contains(Material))
+                            {
+                                searchResultView.Items.Add(quoteRow);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error Searching Quotes");
+                throw;
+            }
+
         }
     }
 }

@@ -36,7 +36,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(390, 60);
+            this.label1.Location = new System.Drawing.Point(253, 518);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 20);
             this.label1.TabIndex = 0;
@@ -44,18 +44,19 @@
             // 
             // btnSaveQuote
             // 
-            this.btnSaveQuote.Location = new System.Drawing.Point(213, 186);
+            this.btnSaveQuote.Location = new System.Drawing.Point(134, 613);
             this.btnSaveQuote.Name = "btnSaveQuote";
-            this.btnSaveQuote.Size = new System.Drawing.Size(145, 102);
+            this.btnSaveQuote.Size = new System.Drawing.Size(145, 68);
             this.btnSaveQuote.TabIndex = 1;
             this.btnSaveQuote.Text = "Save Quote";
             this.btnSaveQuote.UseVisualStyleBackColor = true;
+            this.btnSaveQuote.Click += new System.EventHandler(this.btnSaveQuote_Click);
             // 
             // btnCancelQuote
             // 
-            this.btnCancelQuote.Location = new System.Drawing.Point(477, 186);
+            this.btnCancelQuote.Location = new System.Drawing.Point(394, 613);
             this.btnCancelQuote.Name = "btnCancelQuote";
-            this.btnCancelQuote.Size = new System.Drawing.Size(161, 102);
+            this.btnCancelQuote.Size = new System.Drawing.Size(161, 68);
             this.btnCancelQuote.TabIndex = 2;
             this.btnCancelQuote.Text = "Cancel Quote";
             this.btnCancelQuote.UseVisualStyleBackColor = true;
@@ -65,7 +66,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(746, 721);
             this.Controls.Add(this.btnCancelQuote);
             this.Controls.Add(this.btnSaveQuote);
             this.Controls.Add(this.label1);

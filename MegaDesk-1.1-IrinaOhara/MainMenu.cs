@@ -35,7 +35,7 @@ namespace MegaDesk_1_IrinaOhara
 
         private void btnSearchQuotes_Click(object sender, EventArgs e)
         {
-            SearchQuotes searchQuotesForm = new SearchQuotes();
+            searchQuotes searchQuotesForm = new searchQuotes();
             searchQuotesForm.Tag = this;
             searchQuotesForm.Show(this);
             Hide();
